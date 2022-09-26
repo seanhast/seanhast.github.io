@@ -1,0 +1,673 @@
+body {
+  background-color: #181f26;
+  font-family: montserrat;
+}
+#blok1 {
+  height: 100vh;
+}
+#blok2 {
+  height: 100vh;
+  position: relative;
+}
+#blok3 {
+  height: 100vh;
+}
+img {
+  width: 3.5%;
+  position: relative;
+  top: 1.8rem;
+  left: 2rem;
+}
+.imagea {
+  position: relative;
+  bottom: 10rem;
+  left: 65rem;
+}
+ul {
+  color: white;
+  font-size: 1.3rem;
+  margin-left: 33.5rem;
+  margin-top: 15rem;
+  list-style-type: circle;
+}
+li {
+  margin-top: 1.5rem;
+}
+h5 {
+  font-size: 4rem;
+  color: white;
+  margin-left: 45%;
+  margin-top: 9.5%;
+}
+.button13 {
+  padding-top: 25rem;
+}
+.button13 a {
+  position: absolute;
+  left: 17.5%;
+  text-align: center;
+  width: 100rem;
+  height: 10rem;
+  line-height: 9rem;
+  font-size: 5rem;
+  color: white;
+}
+.button13 a svg,
+.button13 a svg rect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  fill: transparent;
+}
+.button13 a svg rect {
+  stroke: white;
+  stroke-width: 6;
+  transition: 1s;
+  stroke-dasharray: 970, 160;
+}
+.button13 a svg rect:hover {
+  stroke-dasharray: 160, 970;
+  stroke-dasharray: 2200;
+  animation: dash 5s linear forwards;
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.copyright {
+  color: white;
+  font-size: 2rem;
+  margin-top: 35rem;
+  margin-left: 122rem;
+  display: inline-block;
+}
+h1 {
+  color: white;
+  font-family: flood std;
+  font-size: 7rem;
+  display: inline;
+  margin-left: 10rem;
+}
+nav {
+  margin-top: 3rem;
+  border-bottom: 2px solid white;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  margin-left: 5rem;
+  font-weight: bold;
+}
+a:nth-child(2) {
+  margin-left: 60%;
+}
+h2 {
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 20rem;
+  color: white;
+}
+h2:nth-child(3) {
+  font-size: 2.5rem;
+  margin-top: 7rem;
+  opacity: 0.5;
+}
+h3 {
+  color: white;
+  font-size: 6rem;
+  position: absolute;
+  top: 5rem;
+  left: 32%;
+}
+.buttons {
+  display: grid;
+  grid-template-columns: 20rem 20rem 20rem 20rem;
+  grid-template-rows: 7rem 7rem 7rem;
+  grid-gap: 5rem;
+  max-width: 80%;
+  height: 100vh;
+  margin-left: 20%;
+  padding-top: 25rem;
+}
+.button1,
+.button2,
+.button4 {
+  background-color: white;
+  color: #181f26;
+  border-radius: 5rem;
+  position: relative;
+}
+.button1 a,
+.button2 a,
+.button4 a {
+  color: #181f26;
+  position: absolute;
+  top: 2.5rem;
+  left: 0.5rem;
+  text-transform: uppercase;
+}
+.button1 a:hover {
+  color: black;
+  opacity: 0.5;
+}
+.button2 {
+  position: relative;
+  overflow: hidden;
+}
+.button2:before {
+  content: "";
+  position: absolute;
+  height: 150px;
+  width: 50px;
+  background: #181f26;
+  left: -20px;
+  top: -50px;
+  transform: rotate(37deg);
+  transition: all 0.3s;
+  opacity: 0.3;
+}
+.button2:hover::before {
+  left: 100%;
+}
+.button3 {
+  padding-top: 2.5rem;
+}
+.button3 a {
+  border: 2px solid white;
+  padding: 15px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  right: 2.5rem;
+}
+span {
+  position: relative;
+  z-index: 3;
+}
+.button3 a::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -2px;
+  width: calc(100% + 6px);
+  height: calc(100% - 10px);
+  background-color: #181f26;
+  transition: all 0.5s ease-in-out;
+  transform: scaleY(1);
+}
+.button3 a:hover::before {
+  transform: scaleY(0);
+}
+.button3 a::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: -5px;
+  width: calc(100% - 10px);
+  height: calc(100% + 10px);
+  background-color: #181f26;
+  transition: all 0.5s ease-in-out;
+  transform: scaleX(1);
+}
+.button3 a:hover::after {
+  transform: scaleX(0);
+}
+.button4 {
+  background: rgb(225, 91, 240);
+  background: linear-gradient(
+    90deg,
+    rgba(225, 91, 240, 1) 0%,
+    rgba(253, 224, 29, 1) 50%,
+    rgba(69, 88, 252, 1) 100%
+  );
+}
+.button4 a {
+  color: white;
+}
+.button5 a {
+  position: absolute;
+  left: 17.5%;
+  text-align: center;
+  width: 180px;
+  height: 60px;
+  line-height: 60px;
+}
+.button5 a svg,
+.button5 a svg rect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  fill: transparent;
+}
+.button5 a svg rect {
+  stroke: white;
+  stroke-width: 4;
+  transition: 1s;
+  stroke-dasharray: 180, 60;
+}
+.button5 a svg rect:hover {
+  stroke-dasharray: 60, 180;
+  stroke-dasharray: 478;
+
+  animation: dash 5s linear forwards;
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.button6 a {
+  text-transform: uppercase;
+  display: block;
+  position: relative;
+  width: 16rem;
+  box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.5);
+  height: 6rem;
+  right: 3rem;
+}
+.button6 a:before {
+  content: attr(data-text);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 60px;
+  background: rgb(63, 251, 75);
+  background: radial-gradient(
+    circle,
+    rgba(63, 251, 75, 1) 0%,
+    rgba(118, 70, 252, 1) 100%
+  );
+  transition: 0.5s;
+  transform-origin: bottom;
+  transform: rotateX(90deg) translateY(30px);
+}
+.button6 a:hover:before {
+  transform: rotateX(0deg) translateY(0);
+}
+.button6 a:after {
+  content: attr(data-text);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 60px;
+  background: rgb(63, 94, 251);
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
+  transition: 0.5s;
+  transform-origin: top;
+  transform: rotateX(0deg) translateY(0px);
+}
+.button6 a:hover:after {
+  transform: rotateX(90deg) translateY(-30px);
+}
+.button7 {
+  border-radius: 3em;
+  background-image: linear-gradient(
+    90deg,
+    #3e56a7,
+    #04acff,
+    #eaaaaa,
+    #e11adc,
+    #a0a00f,
+    #3e56a7,
+    #14accc
+  );
+  background-size: 400%;
+  position: relative;
+  bottom: 0.5rem;
+}
+.button7 a {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  padding: 0.6em 1.6em;
+  background-color: black;
+  text-transform: Uppercase;
+  text-align: center;
+  color: white;
+  border-radius: 1.5em;
+}
+.button7:hover {
+  animation: animate 3s ease-out infinite;
+}
+.button7 a:hover {
+  text-shadow: 0 0 0.5em rgba(255, 255, 255, 0.8);
+}
+@keyframes animate {
+  0% {
+    background-position: 0%;
+    box-shadow: 0 0 0.8em #04acff;
+  }
+  50% {
+    background-position: 60%;
+    box-shadow: 0 0 0.8em #e11adc;
+  }
+  100% {
+    background-position: 100%;
+    box-shadow: 0 0 0.8em #3e56a7;
+  }
+}
+.button8 {
+  position: relative;
+  right: 4.2rem;
+}
+.button8 a {
+  padding: 2.2rem 4.2rem;
+  height: 6rem;
+  width: 30rem;
+  text-transform: uppercase;
+  color: white;
+  line-height: 6rem;
+  background: rgb(63, 251, 75);
+  background: radial-gradient(
+    circle,
+    rgba(63, 251, 75, 1) 0%,
+    rgba(118, 70, 252, 1) 100%
+  );
+  transition: all 0.8s ease;
+  letter-spacing: 1px;
+  border-radius: 50px;
+}
+.button8 a:hover {
+  letter-spacing: 1rem;
+  background-color: #c51162;
+}
+.button9 {
+  width: 200px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 4px;
+  border: 2px solid white;
+  overflow: hidden;
+  position: relative;
+}
+.button9 a span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.button9 a span:nth-child(1) {
+  transform: translateX(-100%);
+}
+.button9 a:hover span:nth-child(1) {
+  transform: translateX(0);
+  transition: 0.5s;
+}
+.button9 a span:nth-child(2) {
+  transform: translateX(0);
+}
+.button9 a:hover span:nth-child(2) {
+  transform: translateX(100%);
+  transition: 0.5s;
+}
+.button10 a {
+  position: absolute;
+  text-transform: uppercase;
+  color: #181f26;
+  background: transparent;
+  width: 20rem;
+  height: 6rem;
+  text-align: center;
+  line-height: 60px;
+  letter-spacing: 2px;
+  z-index: 1;
+  left: 51rem;
+}
+.button10 a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #20acff;
+  opacity: 0.7;
+  z-index: -1;
+  mix-blend-mode: multiply;
+  transform-origin: top;
+  transition: 0.2s;
+  top: -3px;
+  left: -3px;
+}
+.button10 a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #ff0606;
+  opacity: 0.7;
+  z-index: -1;
+  mix-blend-mode: multiply;
+  transform-origin: bottom;
+  transition: 0.2s;
+  bottom: -3px;
+  right: -3px;
+}
+.button10 a:hover:before {
+  top: -6px;
+  left: 0;
+  transform: perspective(1000px) rotateX(80deg);
+}
+.button10 a:hover:after {
+  bottom: -6px;
+  right: 0;
+  transform: perspective(1000px) rotateX(-80deg);
+}
+.button10 a:hover {
+  color: white;
+}
+.button11 {
+  background: rgb(251, 63, 108);
+  background: radial-gradient(
+    circle,
+    rgba(251, 63, 108, 1) 0%,
+    rgba(242, 252, 70, 1) 100%
+  );
+  color: #181f26;
+  text-transform: uppercase;
+  padding: 15px 25px;
+  border-radius: 25px;
+  box-shadow: 0px 17px 10px -10px rgba(255, 255, 255, 0.4);
+  transition: all ease-in-out 300ms;
+  position: relative;
+  bottom: 0.5rem;
+}
+.button11 a {
+  color: white;
+  position: absolute;
+  top: 2.5rem;
+  left: 0.5rem;
+}
+.button11:hover {
+  transform: translate(0px, -10px) scale(1.3);
+  box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.4);
+}
+.button12 {
+  position: relative;
+  right: 4rem;
+  bottom: 1rem;
+}
+.button12 a {
+  position: relative;
+  display: inline-block;
+  padding: 25px 30px;
+  color: white;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+.button12 a:nth-child(1) {
+  filter: hue-rotate(290deg);
+}
+.button12 a:nth-child(3) {
+  filter: hue-rotate(110deg);
+}
+.button12 a:hover {
+  background: white;
+  color: #181f26;
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+    0 0 200px #03e9f4;
+}
+.button12 a span {
+  position: absolute;
+  display: block;
+}
+.button12 a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: animate1 1s linear infinite;
+  animation-delay: 0.5s;
+}
+@keyframes animate1 {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+.button12 a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+@keyframes animate2 {
+  0% {
+    top: -100%;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+.button12 a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+@keyframes animate3 {
+  0% {
+    right: -100%;
+  }
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+.button12 a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+@keyframes animate4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+.button14 {
+  position: relative;
+  top: 15rem;
+}
+.button14 a {
+  position: absolute;
+  left: 17.5%;
+  text-align: center;
+  width: 280px;
+  height: 100px;
+  line-height: 100px;
+  font-size: 3rem;
+}
+.button14 a svg,
+.button14 a svg rect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  fill: transparent;
+}
+.button14 a svg rect {
+  stroke: white;
+  stroke-width: 4;
+  transition: 1s;
+  stroke-dasharray: 280, 100;
+}
+.button14 a svg rect:hover {
+  stroke-dasharray: 100, 280;
+  stroke-dasharray: 770;
+  animation: dash 5s linear forwards;
+}
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 2.2rem;
+  border: 1px solid #ffffff;
+  border-radius: 0.5rem;
+}
+input[type="submit"] {
+  background-color: brown;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  width: 15rem;
+  font-size: 2rem;
+}
+input[type="submit"]:hover {
+  background-color: #800000;
+}
+.container {
+  margin-top: 8rem;
+  position: relative;
+}
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+h6 {
+  color: white;
+  font-size: 5rem;
+  text-align: center;
+  margin-top: 5rem;
+}

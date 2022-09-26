@@ -1,0 +1,385 @@
+/*
+hamburger MENU
+*/
+.hamburger_menu {
+  visibility: hidden;
+}
+/*
+hamburger MENU
+*/
+/*
+dit is index css
+*/
+html {
+  font-family: montserrat;
+}
+.worklink {
+  font-size: 3rem;
+  color: black;
+  margin-left: 1rem;
+  text-decoration: none;
+  border: 1px solid black;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.adiv {
+  margin-top: 5rem;
+  margin-left: 104rem;
+}
+.worklink:hover {
+  color: #fcf4e2;
+  background-color: black;
+}
+
+.indexlogo {
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 22rem;
+}
+.indexlogo img {
+  width: 100%;
+}
+.kader {
+  height: 100vh;
+  background-color: #fcf4e2;
+}
+/*
+dit is work css
+*/
+.back img{
+  width: 2%;
+  position: fixed;
+  left: 90%;
+  top: 85%;
+}
+.kader1 {
+  height: 100vh;
+  background-color: #fcf4e2;
+}
+.pc {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+  margin-left: 50%;
+  padding-top: 5rem;
+}
+.link:last-child {
+  margin-right: 15rem;
+}
+.link {
+  font-size: 2rem;
+  color: black;
+  text-decoration: none;
+  margin-right: 3rem;
+}
+.link:hover {
+  border-bottom: 1px solid black;
+}
+.box {
+  position: relative;
+  height: 100vh;
+}
+.logowork {
+  width: 6%;
+  position: absolute;
+  left: 20rem;
+  top: 4rem;
+}
+.logowork img {
+  width: 100%;
+}
+.begintekst {
+  margin-top: 20rem;
+  margin-left: 20rem;
+}
+.begintekst h1{
+  font-size: 6rem;
+}
+.begintekst h2{
+  font-size: 3rem;
+  padding-top: 2rem;
+}
+.begintekst p{
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+.fotoreeks1 {
+  margin-top: 20rem;
+}
+.div1 img,
+.div2 img {
+  width: 100%;
+}
+.div1,
+.div2 {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.div2 {
+  padding-top: 25rem;
+}
+.kader2 {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 60rem;
+  grid-row-gap: 5rem;
+  margin-top: 10rem;
+  background-color: white;
+  padding-left: 34%;
+}
+.rij1 img {
+  width: 100%;
+}
+.rij1 video{
+  width: 100%;
+}
+.rij1 h1, .rij1 h2, .rij1 h3{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: 1.5rem;
+}
+.rij1 h2, .rij1 h3{
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+/*
+dit is contact css
+*/
+.contacttekst h1 {
+  font-size: 5rem;
+  text-align: center;
+  padding-top: 10rem;
+}
+.contacttekst h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 8rem;
+}
+.contacttekst h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 1.5rem;
+}
+.contacttekst h4 {
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 8rem;
+}
+b {
+  font-weight: bold;
+}
+.download {
+  padding-top: 8rem;
+  text-align: center;
+}
+.download a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  border: 1px solid black;
+  padding: 1.5rem;
+}
+.download a:hover {
+  color: white;
+  background-color: black;
+}
+@media screen and (max-width: 1000px){
+  /*
+  index css
+  */
+  .worklink {
+    font-size: 6rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .adiv {
+    margin-top: 18rem;
+    margin-left: 7rem;
+  }
+  .indexlogo {
+    width: 85%;
+    padding-top: 60rem;
+  }
+
+  /*
+  hamburger MENU
+  */
+  .hamburger_menu {
+    padding: 2rem 0;
+    width: 100%;
+    visibility: visible;
+  }
+  .hamburger_box{
+    width: 100%;
+  }
+  .hamburger_icon{
+    width: 5rem;
+    position: relative;
+    left: 80%;
+    margin-top: 5%;
+    z-index: 10;
+  }
+  .hamburger_icon span{
+    display: block;
+    width: 7rem;
+    height: 0.8rem;
+    margin-bottom: 1rem;
+    background-color: black;
+    border-radius: 0.3rem;
+    transition: ease-in-out .5s all;
+  }
+  .hamburger_icon span.ativo:first-of-type{
+    transform: translate(0, 8px) rotate(45deg);
+  }
+  .hamburger_icon span.ativo:last-of-type{
+    transform: translate(0, -24px) rotate(-45deg);
+  }
+  .hamburger_icon span.opacity.ativo{
+    opacity: 0;
+  }
+
+  .hamburger_list{
+    position: relative;
+  }
+
+  .hamburger_list ul{
+    z-index: 5;
+    position: absolute;
+    left: -100%;
+    background-color: white;
+    margin-top: -12rem;
+    width: 100%;
+    height: 100vh;
+    transition: ease-out .3s all;
+
+  }
+  .hamburger_list ul.ativo{
+    left: 0;
+  }
+  .hamburger_list ul a:first-child{
+    margin-top: 40%;
+  }
+  .hamburger_list ul a{
+    display: block;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 6rem;
+    text-decoration: none;
+    color: black;
+    cursor: crosshair;
+    padding-top: 14%;
+  }
+  /*
+  hamburger MENU
+  */
+  /*
+  work css
+  */
+  .back img{
+    width: 7%;
+    left: 82%;
+    top: 85%;
+    z-index: 20;
+  }
+  .kader1 {
+    width: 100%;
+  }
+  .pc {
+    display: none;
+    visibility: hidden;
+  }
+  .logowork {
+    width: 20%;
+    position: absolute;
+    left: 10rem;
+    top: 5rem;
+  }
+  .begintekst {
+    margin-top: 35rem;
+    text-align: center;
+    margin-left: 0;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .begintekst h1{
+    font-size: 8rem;
+  }
+  .begintekst h2{
+    font-size: 6rem;
+    padding-top: 10rem;
+  }
+  .begintekst p{
+    font-size: 4rem;
+    padding-top: 10rem;
+  }
+  .fotoreeks1 {
+    margin-top: 20rem;
+  }
+  .div1 img,
+  .div2 img {
+    width: 100%;
+  }
+  .div1,
+  .div2 {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .div2 {
+    padding-top: 25rem;
+  }
+  .kader2 {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 80rem;
+    grid-row-gap: 5rem;
+    margin-top: 10rem;
+    background-color: white;
+    padding-left: 10%;
+  }
+  .rij1 h1, .rij1 h2, .rij1 h3{
+    font-size: 5rem;
+    padding-bottom: 4rem;
+  }
+  .rij1 h2, .rij1 h3{
+    font-size: 3rem;
+  }
+  /*
+  dit is contact css
+  */
+  .contacttekst h1 {
+    font-size: 8rem;
+    padding-top: 40rem;
+  }
+  .contacttekst h2 {
+    font-size: 3rem;
+    padding-top: 14rem;
+  }
+  .contacttekst h3 {
+    font-size: 3rem;
+    padding-top: 3rem;
+  }
+  .contacttekst h4 {
+    font-size: 4rem;
+    padding-top: 14rem;
+  }
+  .download {
+    padding-top: 25rem;
+  }
+  .download a {
+    font-size: 4rem;
+    padding: 3rem;
+  }
+  .download a:hover {
+    color: white;
+    background-color: black;
+  }
+}
